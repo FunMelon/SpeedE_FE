@@ -6,21 +6,56 @@ body {
 }
 
 /*导航栏*/
-nav {
-    background-color: blue;
+#headNav{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
 
     height: 50px;
+    width: 100%;
+
+    position: fixed;
+
     display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+
+    background-color: rgba(75, 92, 196, 0.4);
+    backdrop-filter: blur(50px);
+
+    z-index: 10;
+}
+
+#headNav a {
+    font-size: 15px;
+
+    padding: 15px 40px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+/*导航栏悬停效果*/
+#headNav li a:hover {
+    background-color: #4b5cc4;
 }
 
 /*主页面*/
 #wrapper {
-    background-color: brown;
+    background-color: wheat;
 
-    height: calc(100vh - 50px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*简介样式*/
+.textBlock {
+    background-color: green;
+    width: 200px;
+    margin-right: 40px;
 }
 
 /*表单样式*/
@@ -69,7 +104,7 @@ input.login_input {
     border-radius: 2px;
     box-sizing: border-box;
     background-color: #fff;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 /*复选框*/

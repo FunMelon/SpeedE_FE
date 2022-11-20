@@ -1,9 +1,10 @@
 import React, { ReactNode, useState } from 'react'
 import '../style/personInfo.css'
+import ComplainForm from './forms/Complain';
 
-const PersonInfor = (props: { userName: string; authentication: string, buttonNames: Array<string> }) => {
+const PersonInfor = (props: { userName: string; authentication: string, buttonNames: Array<Array<string>> }) => {
 
-    const buttons: Array<ReactNode> = props.buttonNames.map(value => <Button buttonName={value} />)
+    const buttons: Array<ReactNode> = props.buttonNames.map(value => <Button buttonContent={value[0]} buttonId={value[1]} />)
 
     return (
         <div id={"person_wrapper"}>
@@ -18,15 +19,28 @@ const PersonInfor = (props: { userName: string; authentication: string, buttonNa
             <ul>
                 {buttons}
             </ul>
+            <ComplainForm />
         </div>
     )
 }
 
-const Button = (props: { buttonName: string }) => {
+const Button = (props: { buttonContent: string, buttonId: string }) => {
+    const event = () => {
+        const a: HTMLElement | null = document.getElementById(props.buttonId)
+        if (a != null) {
+            a.style.display = "flex"
+            const form_width = window.getComputedStyle(a).width
+            const w = ((document.body.clientWidth - parseInt(form_width)) / 2).toString()
+            a.style.left = w + "px"
+            const form_height = window.getComputedStyle(a).height
+            const h = ((document.body.clientWidth - parseInt(form_height)) / 2).toString()
+            a.style.left = h + "px"
+        }
+    }
     return (
-        <li id='i'>
-            <button>
-                {props.buttonName}
+        <li>
+            <button onClick={event}>
+                {props.buttonContent}
             </button>
         </li>
     )

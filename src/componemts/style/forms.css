@@ -4,5 +4,5 @@
 
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
 }

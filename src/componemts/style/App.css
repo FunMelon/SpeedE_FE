@@ -51,3 +51,16 @@ body {
 #headNav li a:hover {
     background-color: #4b5cc4;
 }
+
+/*所有按钮统一样式*/
+button {
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #4b5cc4;
+}

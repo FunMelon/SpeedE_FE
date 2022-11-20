@@ -1,0 +1,58 @@
+/*个人主页*/
+#person_wrapper {
+    width: 250px;
+    height: 500px;
+
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*大头照*/
+#mugshot {
+    width: 40%;
+    border-radius: 50%;
+    border: 5px solid #4b5cc4;
+    margin-bottom: 10px;
+}
+
+/*昵称*/
+.name {
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: x-large;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*单行容器*/
+#person_wrapper section{
+    width: 80%;
+    height: 20px;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+/*认证标识*/
+#right {
+    width: 20px;
+    border-radius: 50%;
+}
+
+/*列表*/
+#person_wrapper ul {
+    margin-top: 50px;
+    padding: 0;
+}
+
+#person_wrapper ul li {
+    margin-bottom: 10px;
+}

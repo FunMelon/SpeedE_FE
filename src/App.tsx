@@ -1,6 +1,6 @@
 import React from 'react';
 import './componemts/style/App.css';
-import './componemts/style/Login.css'
+import './componemts/style/login.css'
 
 import {Route, Link, BrowserRouter, Routes} from "react-router-dom";
 import HomePage from './componemts/Home';

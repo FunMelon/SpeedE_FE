@@ -1,8 +1,17 @@
 import React from 'react'
+import PersonInfor from "./module/PersonInfor";
 
-const DriverPage= () => {
+const DriverPage = () => {
     return (
-        <div>司机页面</div>
+        <Wrapper></Wrapper>
+    )
+}
+
+const Wrapper = () => {
+    return (
+        <section id={"wrapper"}>
+            <PersonInfor></PersonInfor>
+        </section>
     )
 }
 

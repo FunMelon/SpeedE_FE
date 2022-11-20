@@ -1,0 +1,8 @@
+/*个人主页*/
+#form_wrapper {
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.7);
+
+    display: none;
+    flex-direction: column;
+    position: absolute;
+}

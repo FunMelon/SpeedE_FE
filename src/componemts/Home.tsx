@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const HomePage = () =>{
     return (
@@ -48,6 +48,13 @@ const Login = () => {
                     <input className={"login_input"} type={"password"}  placeholder={"密码"}/>
                 </li>
                 <li>
+                    <select className={"check_box"}>
+                        <option value={"司机"}>我是注册司机</option>
+                        <option value={"货主"}>我是注册货主</option>
+                        <option value={"平台管理员"}>我是平台管理员</option>
+                    </select>
+                </li>
+                <li>
                     <label className={"login_check"}><input type={"checkbox"}/>记住密码</label>
                     <a href={""} className={"fr"}>忘记密码?</a>
                 </li>
@@ -57,4 +64,4 @@ const Login = () => {
     )
 }
 
-export default HomePage
+export default HomePage;

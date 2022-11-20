@@ -8,7 +8,7 @@ const AdminPage= () => {
 }
 
 const Wrapper = () => {
-    const buttonContentAndId = ["编辑个人资料"]
+    const buttonContentAndId = [["编辑个人资料"]]
     return (
         <section id={"wrapper"}>
             <PersonInfor userName={"管理员三号"} authentication={"已完成系统安全校验"} buttonNames={buttonContentAndId}/>

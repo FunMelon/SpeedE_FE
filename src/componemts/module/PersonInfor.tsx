@@ -1,16 +1,17 @@
 import React from 'react'
 import '../style/personInfo.css'
 
-const PersonInfor = () => {
+const PersonInfor = (props: { userName: string; authentication: string}) => {
+
     return (
         <div id={"person_wrapper"}>
             <img id={"mugshot"} src={"resources/default_avatar.png"} alt={"头像加载失败"}/>
             <span className={"name"}>
-                王师傅
+                {props.userName}
             </span>
             <section>
                 <img id={"right"} src={"resources/right.jpg"} alt={"认证信息失败"}/>
-                已通过司机认证
+                {props.authentication}
             </section>
             <ul>
                 <li>

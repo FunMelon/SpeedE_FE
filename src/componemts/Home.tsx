@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 const HomePage = () => {
     return (
-        <Wrapper></Wrapper>
+        <Wrapper/>
     )
 }
 
@@ -10,8 +10,8 @@ const HomePage = () => {
 const Wrapper = () => {
     return (
         <section id={"wrapper"}>
-            <Intro></Intro>
-            <Login></Login>
+            <Intro/>
+            <Login/>
         </section>
     )
 }

@@ -2,9 +2,9 @@ import React, { ReactNode, useState } from 'react'
 import '../style/personInfo.css'
 import ComplainForm from './forms/Complain';
 
-const PersonInfor = (props: { userName: string; authentication: string, buttonNames: Array<string> }) => {
+const PersonInfor = (props: { userName: string; authentication: string, buttonNames: Array<Array<string>> }) => {
 
-    const buttons: Array<ReactNode> = props.buttonNames.map(value => <Button buttonContent={value} />)
+    const buttons: Array<ReactNode> = props.buttonNames.map(value => <Button buttonContent={value[0]} buttonId={value[1]} />)
 
     return (
         <div id={"person_wrapper"}>
@@ -24,9 +24,9 @@ const PersonInfor = (props: { userName: string; authentication: string, buttonNa
     )
 }
 
-const Button = (props: { buttonContent: string }) => {
+const Button = (props: { buttonContent: string, buttonId: string }) => {
     const event = () => {
-        const a: HTMLElement | null = document.getElementById("form_wrapper")
+        const a: HTMLElement | null = document.getElementById(props.buttonId)
         if (a != null) {
             a.style.display = "flex"
             const form_width = window.getComputedStyle(a).width

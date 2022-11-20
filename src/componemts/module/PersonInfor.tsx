@@ -25,7 +25,7 @@ const PersonInfor = (props: { userName: string; authentication: string, buttonNa
 const Button = (props: { buttonName: string }) => {
     return (
         <li id='i'>
-            <button>
+            <button className={"BButton"}>
                 {props.buttonName}
             </button>
         </li>

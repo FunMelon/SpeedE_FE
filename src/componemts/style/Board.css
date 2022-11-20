@@ -1,0 +1,46 @@
+/*统一的主事务板*/
+.MainBoard {
+    margin-top: 400px;
+    margin-left: 100px;
+    width: 900px;
+    min-height: 550px;
+    background-color: #d6ecf0;
+
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*按钮集群*/
+.ButtonFamily {
+    background-color: #2e4e7e;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*信息板*/
+.basicInfo {
+    width: 100%;
+    background-color: rgba(75, 92, 196, 0.4);
+    margin-bottom: 40px;
+}
+
+/*设置所有信息表的下边距*/
+.basicInfo ul li {
+    margin-bottom: 15px;
+}
+
+/*设置提示字体颜色*/
+.basicInfo ul li input {
+    color: red;
+}
+
+/*设置元素间隔*/
+.basicInfo ul li > *{
+    margin-right: 15px;
+}

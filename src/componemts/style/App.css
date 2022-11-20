@@ -57,7 +57,7 @@ body {
 }
 
 /*所有按钮统一样式*/
-button {
+.BButton {
     width: 100%;
     line-height: 30px;
     font-size: 14px;
@@ -66,20 +66,6 @@ button {
 }
 
 /*统一的按钮悬停样式*/
-button:hover {
+.BButton:hover {
     background-color: #4b5cc4;
-}
-
-/*统一的主事务板*/
-.MainBoard {
-    margin-left: 100px;
-    width: 900px;
-    min-height: 550px;
-    background-color: #d6ecf0;
-
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }

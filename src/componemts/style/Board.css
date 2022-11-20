@@ -1,7 +1,6 @@
 /*统一的主事务板*/
 .MainBoard {
-    margin-top: 400px;
-    margin-left: 100px;
+    margin: 100px;
     width: 900px;
     min-height: 550px;
     background-color: #d6ecf0;

@@ -1,5 +1,6 @@
 /*简介样式*/
 .textBlock {
+    margin-top: 100px;
     width: 500px;
     margin-right: 40px;
 }
@@ -38,6 +39,7 @@
 
 /*表单样式*/
 .mainForm {
+    margin-top: 150px;
     background: aliceblue;
     width: 400px;
     margin-left: 160px;

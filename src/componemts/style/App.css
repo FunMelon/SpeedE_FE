@@ -12,10 +12,9 @@ body {
 
 /*主页面*/
 #wrapper {
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /*导航栏*/

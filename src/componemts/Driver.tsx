@@ -10,7 +10,7 @@ const DriverPage = () => {
 }
 
 const Wrapper = () => {
-    const buttonContentAndId = ["编辑个人资料", "查看当前收益", "我要申诉"]
+    const buttonContentAndId = [["编辑个人资料", "profile_form"], ["查看当前收益", "benefit_form"], ["我要申诉", "complain_form"]]
     return (
         <section id={"wrapper"}>
             <PersonInfor userName={"王师傅"} authentication={"已完成司机认证"} buttonNames={buttonContentAndId}/>

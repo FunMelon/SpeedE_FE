@@ -39,7 +39,7 @@ const Button = (props: { buttonContent: string, buttonId: string }) => {
     }
     return (
         <li>
-            <button onClick={event}>
+            <button className={"BButton"} onClick={event}>
                 {props.buttonContent}
             </button>
         </li>

@@ -7,7 +7,7 @@ body {
 
 /*主页面*/
 #wrapper {
-    background-color: wheat;
+    background-image: url("../image/background.jpg");
 
     height: 100vh;
     display: flex;

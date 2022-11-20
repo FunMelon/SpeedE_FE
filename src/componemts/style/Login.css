@@ -1,14 +1,46 @@
 /*简介样式*/
 .textBlock {
-    background-color: green;
-    width: 200px;
+    width: 500px;
     margin-right: 40px;
+}
+
+/*主标题*/
+#main_title {
+    color: #ffffff;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #4b5cc4,
+    3px 3px 3px blue,
+    4px 4px 4px #2e4e7e,
+    6px 6px 3px #4a4266;
+    margin: 0;
+}
+
+#sub_title {
+    text-align: right;
+    color: white;
+    font-size: 17px;
+    text-shadow: 1px 1px 0 #4b5cc4,
+    3px 3px 3px blue,
+    4px 4px 4px #2e4e7e,
+    6px 6px 3px #4a4266;
+}
+
+/*介绍*/
+#introduce {
+    padding: 10px;
+    color: white;
+    background-color: rgba(75, 92, 196, 0.4);
+    backdrop-filter: blur(50px);
+    box-shadow: #4b5cc4;
 }
 
 /*表单样式*/
 .mainForm {
     background: aliceblue;
     width: 400px;
+    margin-left: 160px;
     padding: 45px;
     border-radius: 20px;
     flex-direction: column;

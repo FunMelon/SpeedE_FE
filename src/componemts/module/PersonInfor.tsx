@@ -33,7 +33,7 @@ const Button = (props: { buttonContent: string, buttonId: string }) => {
             const w = ((document.body.clientWidth - parseInt(form_width)) / 2).toString()
             a.style.left = w + "px"
             const form_height = window.getComputedStyle(a).height
-            const h = ((document.body.clientHeight - parseInt(form_height)) / 2).toString()
+            const h = ((document.body.clientHeight - parseInt(form_height)) / 4).toString()
             a.style.top = h + "px"
         }
     }

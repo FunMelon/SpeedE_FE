@@ -8,6 +8,7 @@ import DriverPage from './componemts/Driver';
 import SupplierPage from "./componemts/Supplier";
 import AdminPage from "./componemts/Admin";
 import AboutPage from "./componemts/About";
+import AllForms from './componemts/module/forms/AllForms';
 
 const App = () => {
     return (
@@ -28,6 +29,7 @@ const App = () => {
                     <Route path={'/about/'} element={<AboutPage/>}/>
                 </Routes>
             </BrowserRouter>
+            <AllForms />
         </div>
     );
 }

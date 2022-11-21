@@ -2,6 +2,7 @@ import React from 'react'
 import PersonInfor from "./module/PersonInfor";
 import GodMap from "./module/Map";
 import Clock from "./module/Clock";
+import ControlButton from './module/forms/buttons/ControlButton';
 
 const SupplierPage= () => {
     return (
@@ -23,15 +24,9 @@ const SupplierBoard = () => {
  return (
      <div className={"MainBoard"}>
          <ul className={"ButtonFamily"}>
-                <li>
-                    <button className={"BButton"}>提交订单</button>
-                </li>
-                <li>
-                    <button className={"BButton"}>查看订单历史</button>
-                </li>
-                <li>
-                    <button className={"BButton"}>当前订单队列</button>
-                </li>
+                <ControlButton buttonContent='提交订单' buttonId='submit_order_form'/>
+                <ControlButton buttonContent='查看订单历史' buttonId=''/>
+                <ControlButton buttonContent='当前订单队列' buttonId=''/>
             </ul>
             <div className={"basicInfo"}>
                 <Clock/>

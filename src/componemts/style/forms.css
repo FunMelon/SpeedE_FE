@@ -2,9 +2,23 @@
     display: none;
 }
 
+#benefit_form {
+    display: none;
+}
+
+#submit_order_form {
+    display: none;
+}
+
 #close_button_wrapper {
     display: flex;
     justify-content: end;
+}
+
+#submit_button_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .form_wrapper {
@@ -17,6 +31,6 @@
 }
 
 .form_content_wrapper {
-    margin: 20px 30px;
+    margin: 10px 30px;
     display: flex;
 }

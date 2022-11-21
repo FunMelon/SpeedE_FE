@@ -58,3 +58,22 @@
 #person_wrapper ul li {
     margin-bottom: 10px;
 }
+
+@media (max-width: 500px) {
+
+    #person_wrapper {
+        width: 500px;
+        height: 300px;
+        margin: 100px 0 0 0;
+    }
+
+    #mugshot {
+        margin-top: 10px;
+        width: 20%;
+    }
+
+    #person_wrapper ul {
+        display: flex;
+        flex-direction: row;
+    }
+}

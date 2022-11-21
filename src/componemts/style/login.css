@@ -2,7 +2,6 @@
 .textBlock {
     margin-top: 100px;
     width: 500px;
-    margin-right: 40px;
 }
 
 /*主标题*/
@@ -121,4 +120,24 @@ input.login_input {
     text-align: center;
     cursor: pointer;
     vertical-align: middle;
+}
+
+@media (max-width: 500px) {
+
+    .textBlock {
+        margin: 100px 10px 40px 10px;
+    }
+
+    #introduce {
+        height: 250px;
+        width: 460px;
+        overflow: auto;
+        box-shadow: 0 030px 10px rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+
+    .mainForm {
+        width: 400px;
+        margin: 0;
+    }
 }

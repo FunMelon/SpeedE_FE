@@ -14,6 +14,7 @@ body {
 #wrapper {
     display: flex;
     justify-content: center;
+    padding: 10px;
     align-items: flex-start;
 }
 
@@ -30,8 +31,6 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-    align-items: stretch;
 
     background-color: rgba(75, 92, 196, 0.4);
     backdrop-filter: blur(50px);
@@ -41,8 +40,6 @@ body {
 
 /*导航栏链接*/
 #headNav a {
-    font-size: 15px;
-
     padding: 15px 40px;
     display: block;
     color: white;
@@ -67,4 +64,24 @@ body {
 /*统一的按钮悬停样式*/
 .BButton:hover {
     background-color: #4b5cc4;
+}
+
+@media (max-width: 500px) {
+
+    #headNav a {
+        padding: 10px 30px;
+    }
+
+    #headNav {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #wrapper {
+        /*background-color: red;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

@@ -2,5 +2,10 @@
     width: 800px;
     height: 600px;
     margin-bottom: 20px;
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 500px) {
+    .insideMap {
+        width: 460px;
+    }
 }
